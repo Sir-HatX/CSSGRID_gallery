@@ -1,0 +1,152 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(250, 248, 248);
+}
+.nav-bar{
+    background: rgb(55, 40, 68);
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    margin-bottom: 5px;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-Content {
+    padding: 2px;
+    display: grid;
+    margin-left: 5px; 
+    grid-gap: 2px;
+    grid-template-columns: repeat(8, 1fr);
+    color: #fff;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 65px;
+    display: grid;
+    grid-template-areas: 'menu content students-data';
+    grid-template-columns: .9fr 4fr 1fr;
+}
+
+.menu {
+    padding: 2px;
+    height: 200px;
+    margin-top: 10px;
+    
+}
+
+.menu p {
+    color:black;
+    padding: 5px;
+}
+/* .content {
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 0 5px;
+    padding: 5px;
+} */
+ .content {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0.5vw;
+    margin: 0 5px;
+    min-height: 80vh
+}
+
+/* .Bcard {
+    grid-column: 1/3;
+    grid-row: 1/3;
+} */
+
+.content div{
+    background: #fff;
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 2px 3px 8px grey;
+    border: 2px solid #ffff;
+    align-items: center;
+}
+.card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+.Bcard img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.students-data{
+    padding: 5px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.footer{
+    background:black;
+    width: 100%;
+    height: 40px;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .dashboard {
+        max-width: 100vw;
+        margin: 0 auto;
+        padding-top: 65px;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu , .students-data {
+        display: none;
+    }
+    .content {
+        display: flex;
+        direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: 80vh;
+        margin: 5 5px;
+        padding: 5px;
+        width: 95%;
+    }
+    
+    .card {
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .content div{
+        background: #fff;
+        width: 40vw;
+        height: 40vw;
+        margin: 5px;
+        border-radius: 3px;
+        box-shadow: 2px 3px 8px grey;
+        border: 2px solid #ffff;
+        align-items: center;
+    }
+    .card img {
+        height: 100%;
+        width: 100%;
+        border-radius: 3px;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+      .content div {
+          width: 90%;
+          height: 50vw;
+      }
+  }
