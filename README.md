@@ -1,4 +1,4 @@
-# SIMPLE IMAGE CSSGRID
+# SIMPLE IMAGE CSSGRID 
 # Desktop Screen
 ![image](https://github.com/KamandeJohn/CSSGRID_gallery/assets/28919196/26df581d-dda9-44c3-aaa1-84f6836cc042)
 
